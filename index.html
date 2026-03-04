@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ruchi Shukla | Portfolio</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <button id="toggle">🌙</button>
+
+    <div class="hero-content">
+      <p class="hero-intro fade-1">Hello, I’m</p>
+
+<h1 class="hero-title">
+  Ruchi <span class="netflix-fade">Shukla</span>
+</h1>
+
+      <p class="hero-subtitle fade-3">
+        Computer Science Undergraduate<br>
+        Front-End Developer
+      </p>
+
+      <div class="hero-actions fade-4">
+        <a href="resume.pdf" class="btn primary" target="_blank">Download Resume</a>
+        <a href="https://github.com/Ruchieyyy" class="btn ghost" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </header>
+<div class="page-bg">
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="fade-1">About Me</h2>
+    <p>
+      I am a B.Tech Computer Science student at MIT World Peace University, Pune.
+      I enjoy building clean, user-friendly web interfaces and have a strong
+      foundation in Data Structures, DBMS, and Operating Systems.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="fade-1">Skills</h2>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>C</span>
+      <span>C++</span>
+      <span>SQL</span>
+      <span>MongoDB</span>
+      <span>DBMS</span>
+      <span>Operating Systems</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2 class="fade-1">Projects</h2>
+
+    <h3>Movie Review Website</h3>
+    <p>Responsive website built using HTML, CSS, and JavaScript.</p>
+
+    <h3>Employee Management System</h3>
+    <p>Console-based system implemented using C programming.</p>
+
+    <h3>Smart Lock System</h3>
+    <p>Digital security system designed using logic gates.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2 class="fade-1">Experience</h2>
+
+    <h3>Freelance Front-End Developer</h3>
+    <p>Built responsive movie and product review web pages.</p>
+
+    <h3>Content Writer Intern – Helpert</h3>
+    <p>Researched and wrote structured digital content.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2 class="fade-1">Contact</h2>
+    <p>Email: <strong>ruchishukla34555@gmail.com</strong></p>
+    <p>Location: Pune, Maharashtra</p>
+  </section>
+
+  <!-- JS -->
+  <script>
+    const toggle = document.getElementById("toggle");
+
+    toggle.onclick = () => {
+      document.body.classList.toggle("dark");
+      toggle.textContent =
+        document.body.classList.contains("dark") ? "☀️" : "🌙";
+    };
+  </script>
+</div>
+
+</body>
+</html>
