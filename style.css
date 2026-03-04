@@ -1,0 +1,251 @@
+/* GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.15), transparent 40%),
+    linear-gradient(180deg, #020617, #020617);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-intro {
+  color: #94a3b8;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 12px 0;
+  
+}
+
+
+/* HERO TITLE COLOR CONTROL */
+.hero-title {
+  color: #0e1b2b; /* LIGHT MODE – Ruchi */
+}
+
+body.dark .hero-title {
+  color: #b0cff5; /* DARK MODE – Ruchi */
+}
+
+
+/* Accent color on last name */
+
+
+/* Netflix-style fade */
+
+.netflix-fade {
+  animation: netflixBlueFade 6s ease-in-out infinite;
+}
+
+@keyframes netflixBlueFade {
+  0% {
+    color: #60a5fa;
+    letter-spacing: 0.25em;
+  }
+  20% {
+    color: #38bdf8;
+    letter-spacing: 0.05em;
+  }
+  70% {
+    color: #38bdf8;
+    letter-spacing: 0.05em;
+  }
+  100% {
+    color: #60a5fa;
+    letter-spacing: 0.25em;
+  }
+}
+
+
+
+
+.hero-subtitle {
+  color: #cbd5f5;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.btn.ghost {
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+}
+
+/* DARK MODE TOGGLE */
+#toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* SECTIONS (CLEAN & READABLE) */
+section {
+  background: #ffffff;
+  max-width: 900px;
+  margin: 72px auto;
+  padding: 48px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+section h3 {
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+
+section p {
+  color: #334155;
+  line-height: 1.7;
+}
+
+/* SKILLS TAGS */
+.tags span {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 999px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  display: inline-block;
+}
+
+/* ANIMATION – TEXT ONLY */
+.fade-1, .fade-2, .fade-3, .fade-4 {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: reveal 0.9s ease forwards;
+}
+
+.fade-2 { animation-delay: 0.2s; }
+.fade-3 { animation-delay: 0.4s; }
+.fade-4 { animation-delay: 0.6s; }
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DARK MODE */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark section {
+  background: #020617;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+body.dark section p {
+  color: #cbd5e1;
+}
+
+body.dark .tags span {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+
+
+
+/* LIGHT MODE HERO BACKGROUND */
+body:not(.dark) .hero {
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.25), transparent 45%),
+    linear-gradient(180deg, #f8fafc, #eef2ff);
+}
+
+/* LIGHT MODE PAGE BACKGROUND */
+/* LIGHT MODE BACKGROUND – MINIMAL & CLEAN */
+
+
+/* Light mode background for rest of page */
+.page-bg {
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef6ff 40%,
+      #f8fafc 100%
+    );
+  padding: 80px 0;
+}
+body.dark .page-bg {
+  background: #020617;
+}
+
+/* LIGHT MODE TEXT FIX */
+body:not(.dark) .hero-intro {
+  color: #475569; /* slate, readable */
+}
+
+
+body:not(.dark) .hero-subtitle {
+  color: #334155; /* medium contrast */
+}
+
+body:not(.dark) .btn.ghost {
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+
+
+/* Ligh
+t mode background for rest of page ONLY */
